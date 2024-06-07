@@ -1,0 +1,8 @@
+
+wirefrime:
+carpeta: https://whimsical.com/desafio1-K5gZA2bvLxLirpHEF78p77
+index: https://whimsical.com/index-hmtl-B8Xm39HHZ7yFGdguKFuBqX
+iniciar: https://whimsical.com/iniciodesesion-DZD9KnohJArFMyBgRzLaM6
+blogs: https://whimsical.com/blogs-WGEtxoi1wmkSuckm9ZcFBL
+recomendados: https://whimsical.com/recomendados-PdMK9aKpj5PgFKEdMsjYXC
+contacto: https://whimsical.com/contacto-7uQ7s2yewF1Ydw5VAtUDLS
