@@ -27,6 +27,12 @@ header {
    width: auto;
 }
 
+.dos {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
 nav {
     background-color: rgb(110, 101, 101);
     width: 100%;
@@ -51,11 +57,13 @@ body {
     font-family: "roboto";
     color: rgb(0, 0, 0);
 }
-
-.introduccion {
+.introduccion h2 {
     text-align: center;
+}
+.introduccion {
     font-weight: 500;
     font-style: bold;
+    padding: 25px;
 }
 
 .contenido {
@@ -144,7 +152,6 @@ body {
 
  .inicio-form input {
     border: 2px solid #ebebeb;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 15px;
     padding: 0 16px;
     border-radius: 1.25rem;
@@ -161,7 +168,6 @@ border-radius: 1.25rem;
 background: #1f1f1f;
 color: #f9f9f9;
 border: 0;
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 font-size: 1rem;
 font-weight: 600;
 text-align: center;
@@ -267,6 +273,8 @@ background: #000000 ;
     transition: all 0.3s;
 } 
 
+/* primer mediaquery */
+
 @media (max-width:1200px) {
     .maqueta {
         grid-template-columns: auto auto;
@@ -278,11 +286,25 @@ background: #000000 ;
                           margin-left: auto;
                           margin-right: auto;
     }
+
+    .doss {
+        display: none;
+    }
+
+    .container-fluid {
+        flex-direction: column;
+        align-items: center;
+    }
+
     /* El nav deberia ponerse en fila y no en columna, no lo puedo resolver */
-    nav {
+     nav ul {
         display:flex;
         align-content: flex-start;
         flex-direction: row;
+        margin: 0;
+    }
+
+    .op {
         margin: 0;
     }
 
@@ -294,22 +316,53 @@ background: #000000 ;
         height: auto;
         width: auto;
     }
+    .footer {
+        justify-content:flex-start;
+    }
 }
+/* segundo mediaquery */
 @media (max-width:768px) {
     .maqueta {
-        grid-template-columns: auto;
-    grid-template-rows: auto auto auto auto;
+        grid-template-columns: 1fr;
     grid-template-areas: "header"
                          "nav" 
                          "main"
                           "footer";
     }
 
+    
+
     /* El nav deberia ponerse en fila y no en columna, no lo puedo resolver */
-    nav {
+    nav ul {
         display:flex;
         align-content: flex-start;
         flex-direction: row;
         margin: 0;
     }
+
+    .non {
+        display: none;
+    }
+
+    header .logo {
+        width: 20%;
+        display:  inline;
+    }
+    
+    .futer-form {
+        display: none;
+    }
+    
 }
+
+/* tercer mediaquery */
+
+@media (max-width: 550px) {
+
+
+    .contenido {
+
+        grid-template-columns: auto;
+
+}
+ }
