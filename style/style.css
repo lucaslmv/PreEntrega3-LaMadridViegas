@@ -1,368 +1,263 @@
 
-*{
-    padding: 0;
+* {
     margin: 0;
-}
-header .logo {
-    width: 250px;
-    display:  inline;
-}
-
-
-
-.kbza {
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  header {
+    background-color: #054E05;
+  }
+  
+  h2 {
+    color: rgb(0, 0, 0);
+  }
+  
+  footer {
+    background-color: #054E05;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-}
-
-header ul li {
-    list-style-type: none;
-    display: flex;
-    
-}
-header {
-   background-color: rgb(5, 78, 5);
-   height: auto;
-   width: auto;
-}
-
-.dos {
-    display: flex;
-    justify-content: end;
-    align-items: end;
-}
-
-nav {
-    background-color: rgb(110, 101, 101);
-    width: 100%;
-}
-
-nav ul {
-    list-style-type: none;
-}
-
-.op { display: flex;
-    margin: 30px;
-    border: 2px solid;
-}
-
-a {
-    text-decoration: none;
+    justify-content: center;
+    font-family: "roboto";
     color: black;
-}
-
-body {
-    background-color: rgb(114, 70, 50);
+  }
+  
+  a {
+    color: inherit !important;
+    text-decoration: none;
+  }
+  
+  ul li {
+    list-style: none;
+  }
+  
+  body {
+    background-color:  #724632;
     font-family: "roboto";
     color: rgb(0, 0, 0);
-}
-.introduccion h2 {
+  }
+  
+  /* Inicio de clases */
+  
+  /* nav */
+  
+  .logo-img {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .nav-item {
+  color:black
+  }
+  
+  .nav-item:hover {
+    transform: scale(1.2);
+    transition: all 0.3s;
+  }
+  
+   /* contenido */
+  .main-content {
+    background-color: #724632;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .quienes-somos {
+    max-width: 800px;
     text-align: center;
-}
-.introduccion {
-    font-weight: 500;
-    font-style: bold;
-    padding: 25px;
-}
-
-.contenido {
-    display:grid;
-    grid-template-columns: auto auto;
-    place-content: center;
-    grid-column-gap: 30px ;
-    grid-row-gap: 10px
-}
-
-.contenido h3  {
-    text-align: center;
-    font-weight: bold;
-}
-.contenido img {
-
-    width: 20%;
-}
-
-.card {
-    background-color: rgb(114, 70, 50);
+  }
+  
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 782px;
+  }
+  
+  .card {
+    background-color: #724632;
     border: solid 2px;
-    width: 18rem;
-    margin-bottom: 50px;
-    margin-top: 40px;
-}
-
-.card img {
+    width: 270px;
+    margin: 25px;
+  }
+  
+  .card img {
     display: flex;
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
-}
-
-
-.sesion {
+    width: 20%;
+  }
+  
+  .img-svg {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .pag2 {
     text-align: center;
-    position: relative;
-    z-index: 3;
-    margin: 0 20px;
-    padding: 70px 30px 44px;
-    border-radius: 1.25rem;
-    background-color:rgb(110, 101, 101);
     margin-top: 50px;
+  }
+  
+  .sesion {
+    text-align: center;
+    width: 500px;
+    background-color: grey;
+    margin-top: 50px;
+    margin-bottom: 50px;
     margin-left: auto;
     margin-right: auto;
-    width: 400px;
-    height: auto;
-}
-
-.pag2 {
-    text-align: center;
-    margin-top: 50px;
-}
-
-.sesion h2{
+    border-radius: 1.25rem;
+    transition: all 0.375s;
+    padding: 50px;
+  }
+  .sesion h2{
     font-size: 36px;
     font-weight: 600 ;
     margin: 0 0 30px;
- }
-
- .sesion h3 {
+  }
+  
+  .sesion h3 {
     color: rgba(0, 0, 0, 0.38);
     margin: 0 0 30px;
     font-weight: 500;
     font-size: 1rem;
- } 
-
- .inicio-form{
+  } 
+  .inicio-form{
     width: 100%;
     margin: 0;
     display: grid;
     gap: 16px;
-
- }
-
- .inicio-form input, .inicio-form button {
-    width: 100%;
+  
+  }
+  
+  .inicio-form input, .inicio-form button {
+    width: 50%;
     height: 50px;
- }
-
- .check {
-    height: 2px;
-    width: 2px;
- }
-
- .inicio-form input {
+  }
+  
+  .inicio-form input {
     border: 2px solid #ebebeb;
+    width: 80%;
     font-size: 15px;
     padding: 0 16px;
     border-radius: 1.25rem;
     transition: all 0.375s;
- }
- .inicio-form input :hover{
+    margin: auto;;
+  }
+  .inicio-form input :hover{
     border: 2px solid #000000;
- }
- .inicio-form button {
+  }
+  .inicio-form button {
     cursor: pointer;
-    width: 100%;
+    width: 60%;
     padding: 0 16px;
-border-radius: 1.25rem;
-background: #1f1f1f;
-color: #f9f9f9;
-border: 0;
-font-size: 1rem;
-font-weight: 600;
-text-align: center;
-letter-spacing: 2px;
-transition: all 0.375s; 
-
-}
-.inicio-form button:hover{
-background: #000000 ;   
-
-}
-
-.inicio-form a:hover {
-color: #10449A;
-
-}
-
-.redes img {
-    width: 7%;
-}
-
-footer {
-    background-color: grey;
-}
-
-.maqueta {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto auto;
-    grid-template-areas: "header header header"
-                         "nav main main"
-                          "footer footer footer";
-}
-
-header {
-    grid-area: header;
-}
-
-nav {
-    grid-area: nav;
-}
-
-main {
-    grid-area: main;
-}
- 
-footer {
-    grid-area: footer;
-}
-
-.unem:hover {
-    transform: scale(1.2);
-    transition: all 0.3s;
-}
-
-.men:hover {
-    transform: scale(1.2);
-    transition: all 0.3s;
-}
-
-.footer{
+  border-radius: 1.25rem;
+  background: #1f1f1f;
+  color: #f9f9f9;
+  border: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 2px;
+  transition: all 0.375s; 
+  margin: auto;
+  
+  }
+  .inicio-form button:hover{
+  background: #000000 ;   
+  
+  }
+  
+  .inicio-form .pr:hover {
+  color: #10449A;
+  
+  }
+  
+  .contac {
+    padding: 30px;
     display: flex;
-    align-items: center;
+    justify-content: space-between;
+  
+  }
+  
+  .contac img {
+    width: 120px;
+    height: 120px;
+  }
+ 
+  .redes {
+    margin-right: 10%;
+  }
+  
+  .mandar {
+  margin-left: 10%;
+  padding: 10%;
+  }
+  .contact-form input :hover{
+    border: 2px solid #000000;
+  }
+  
+  .contact-form button {
+    cursor: pointer;
+    width: 80px;
+    padding: 0 16px;
+  border-radius: 1.25rem;
+  background: #1f1f1f;
+  color: #f9f9f9;
+  border: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 2px;
+  transition: all 0.375s; 
+  
+  }
+  .contact-form button:hover{
+  background: #000000 ;   
+  
+  }
+  
+  /* footer */
+  
+  .footer{
+    display: flex;
+    align-items:start;
     padding: 100px;
     justify-content: space-evenly;
-}
-
-.futer-form{
-    border: 2px solid rgb(5, 78, 5);
+  }
+  .futer-form{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 15px;
-    padding: 0 16px;
-    border-radius: 1.25rem;
     transition: all 0.375s;
-}
-
-.futer-form input :hover{
+  }
+  
+  .futer-form input :hover{
     border: 2px solid #000000;
- }
- .futer-form button {
+  }
+  .futer-form button {
     cursor: pointer;
     width: 100%;
     padding: 0 16px;
-border-radius: 1.25rem;
-background: #1f1f1f;
-color: #f9f9f9;
-border: 0;
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-font-size: 1rem;
-font-weight: 600;
-text-align: center;
-letter-spacing: 2px;
-transition: all 0.375s; 
-
-}
-.futer-form button:hover{
-background: #000000 ;   
-
-}
-
-.futer .men:hover {
-    transform: scale(1.2);
-    transition: all 0.3s;
-} 
-
-/* primer mediaquery */
-
-@media (max-width:1200px) {
-    .maqueta {
-        grid-template-columns: auto auto;
-    grid-template-rows: auto auto auto auto;
-    grid-template-areas: "header header"
-                         "nav nav" 
-                         "main main"
-                          "footer footer";
-                          margin-left: auto;
-                          margin-right: auto;
-    }
-
-    .doss {
-        display: none;
-    }
-
-    .container-fluid {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    /* El nav deberia ponerse en fila y no en columna, no lo puedo resolver */
-     nav ul {
-        display:flex;
-        align-content: flex-start;
-        flex-direction: row;
-        margin: 0;
-    }
-
-    .op {
-        margin: 0;
-    }
-
-    .container {
-
-        margin-right: 500px;
-        margin-left: auto;
-
-        height: auto;
-        width: auto;
-    }
-    .footer {
-        justify-content:flex-start;
-    }
-}
-/* segundo mediaquery */
-@media (max-width:768px) {
-    .maqueta {
-        grid-template-columns: 1fr;
-    grid-template-areas: "header"
-                         "nav" 
-                         "main"
-                          "footer";
-    }
-
-    
-
-    /* El nav deberia ponerse en fila y no en columna, no lo puedo resolver */
-    nav ul {
-        display:flex;
-        align-content: flex-start;
-        flex-direction: row;
-        margin: 0;
-    }
-
-    .non {
-        display: none;
-    }
-
-    header .logo {
-        width: 20%;
-        display:  inline;
-    }
-    
-    .futer-form {
-        display: none;
-    }
-    
-}
-
-/* tercer mediaquery */
-
-@media (max-width: 550px) {
-
-
-    .contenido {
-
-        grid-template-columns: auto;
-
-}
- }
+  border-radius: 1.25rem;
+  background: #1f1f1f;
+  color: #f9f9f9;
+  border: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 2px;
+  transition: all 0.375s; 
+  
+  }
+  .futer-form button:hover{
+  background: #000000 ;   
+  
+  }
