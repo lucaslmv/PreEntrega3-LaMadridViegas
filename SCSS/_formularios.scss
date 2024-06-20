@@ -1,0 +1,117 @@
+
+
+/* Formularios */
+
+.inicio-form {
+    width: 100%;
+    margin: 0;
+    display: grid;
+    gap: 16px;
+    
+    input {
+        border: 2px solid #ebebeb;
+    width: 80%;
+    font-size: 15px;
+    padding: 0 16px;
+    border-radius: 1.25rem;
+    transition: all 0.375s;
+    margin: auto;
+    }
+
+    button {
+        cursor: pointer;
+        width: 60%;
+        padding: 0 16px;
+      border-radius: 1.25rem;
+      background: #1f1f1f;
+      color: #f9f9f9;
+      border: 0;
+      font-size: 1rem;
+      font-weight: 600;
+      text-align: center;
+      letter-spacing: 2px;
+      transition: all 0.375s; 
+      margin: auto;
+      
+      }
+  
+  }
+  
+  .inicio-form input, .inicio-form button {
+    width: 50%;
+    height: 50px;
+  }
+  
+  .inicio-form input :hover{
+    border: 2px solid #000000;
+  }
+  .inicio-form 
+  .inicio-form button:hover{
+  background: #000000 ;   
+  
+  }
+  
+  .inicio-form .pr:hover {
+  color: #10449A;
+  
+  }
+
+  .contact-form input :hover{
+    border: 2px solid #000000;
+  }
+  
+  .contact-form button {
+    cursor: pointer;
+    width: 80px;
+    padding: 0 16px;
+  border-radius: 1.25rem;
+  background: #1f1f1f;
+  color: #f9f9f9;
+  border: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 2px;
+  transition: all 0.375s; 
+  
+  }
+  .contact-form button:hover{
+  background: #000000 ;   
+  
+  }
+
+  /*Formulario footer */
+
+  .futer-form{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    transition: all 0.375s;
+    button {
+        cursor: pointer;
+        width: 100%;
+        padding: 0 16px;
+      border-radius: 1.25rem;
+      background: #1f1f1f;
+      color: #f9f9f9;
+      border: 0;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: 1rem;
+      font-weight: 600;
+      text-align: center;
+      letter-spacing: 2px;
+      transition: all 0.375s; 
+      
+      }
+
+      @include tamanio (350px, 350px, 2px)
+
+  }
+  
+  .futer-form input :hover{
+    border: 2px solid #000000;
+  }
+  .futer-form button:hover{
+  background: #000000 ;   
+  
+  }

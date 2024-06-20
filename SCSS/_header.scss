@@ -1,0 +1,35 @@
+
+
+/*header */
+
+ header {
+    background-color: $color-header;
+    ul {
+            list-style: none;
+        
+      }
+      h1 {
+        color: $color-h1;
+      }
+      a {
+        color: inherit !important;
+        text-decoration: none;
+      }
+     }
+
+     
+
+  .logo-img {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .nav-item {
+  color:black
+  }
+  
+  .nav-item:hover {
+    transform: scale(1.2);
+    transition: all 0.3s;
+  }
+  

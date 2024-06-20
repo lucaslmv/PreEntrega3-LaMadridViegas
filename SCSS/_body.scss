@@ -1,0 +1,118 @@
+
+
+/* Contenido principal */
+
+  a {
+    color: inherit !important;
+    text-decoration: none;
+  }
+
+  body {
+    background-color: $color-body;
+    font-family: $letra;
+    color: $color-letra;
+    
+h2 {
+    color: $color-hs;
+  }
+
+  .main-content {
+    background-color: $color-body;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .quienes-somos {
+    max-width: 800px;
+    text-align: center;
+  }
+
+  .pag2 {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .sesion {
+    text-align: center;
+    width: 500px;
+    background-color: grey;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1.25rem;
+    transition: all 0.375s;
+    padding: 50px;
+
+    h2{
+        font-size: 36px;
+        font-weight: 600 ;
+        margin: 0 0 30px;
+      }
+
+      h3 {
+        color: rgba(0, 0, 0, 0.38);
+        margin: 0 0 30px;
+        font-weight: 500;
+        font-size: 1rem;
+      } 
+  } 
+
+  .contac {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    img {
+        width: 120px;
+        height: 120px;
+      }
+     
+  
+  }
+  
+  .redes {
+    margin-right: 10%;
+  }
+  
+  .mandar {
+  margin-left: 10%;
+  padding: 10%;
+  }
+
+  }
+
+  
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 782px;
+
+    .card {
+        background-color: $color-body;
+        border: solid 2px;
+        width: 270px;
+        margin: 25px;
+        img {
+            display: flex;
+            justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
+            width: 20%;
+          }
+      }
+
+
+  }
+  
+  
+  .img-svg {
+    width: 18px;
+    height: 18px;
+  }
+  
+ 

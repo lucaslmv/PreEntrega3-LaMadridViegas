@@ -1,0 +1,260 @@
+/* SCSS importaodr */
+/* Variables */
+/* Mixins */
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*header */
+header {
+  background-color: #054E05;
+}
+header ul {
+  list-style: none;
+}
+header h1 {
+  color: black;
+}
+header a {
+  color: inherit !important;
+  text-decoration: none;
+}
+
+.logo-img {
+  width: 150px;
+  height: 150px;
+}
+
+.nav-item {
+  color: black;
+}
+
+.nav-item:hover {
+  transform: scale(1.2);
+  transition: all 0.3s;
+}
+
+/* Contenido principal */
+a {
+  color: inherit !important;
+  text-decoration: none;
+}
+
+body {
+  background-color: #724632;
+  font-family: "roboto";
+  color: black;
+}
+body h2 {
+  color: black;
+}
+body .main-content {
+  background-color: #724632;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+body .quienes-somos {
+  max-width: 800px;
+  text-align: center;
+}
+body .pag2 {
+  text-align: center;
+  margin-top: 50px;
+}
+body .sesion {
+  text-align: center;
+  width: 500px;
+  background-color: grey;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 1.25rem;
+  transition: all 0.375s;
+  padding: 50px;
+}
+body .sesion h2 {
+  font-size: 36px;
+  font-weight: 600;
+  margin: 0 0 30px;
+}
+body .sesion h3 {
+  color: rgba(0, 0, 0, 0.38);
+  margin: 0 0 30px;
+  font-weight: 500;
+  font-size: 1rem;
+}
+body .contac {
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+body .contac img {
+  width: 120px;
+  height: 120px;
+}
+body .redes {
+  margin-right: 10%;
+}
+body .mandar {
+  margin-left: 10%;
+  padding: 10%;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 782px;
+}
+.card-container .card {
+  background-color: #724632;
+  border: solid 2px;
+  width: 270px;
+  margin: 25px;
+}
+.card-container .card img {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+
+.img-svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* Formularios */
+.inicio-form {
+  width: 100%;
+  margin: 0;
+  display: grid;
+  gap: 16px;
+}
+.inicio-form input {
+  border: 2px solid #ebebeb;
+  width: 80%;
+  font-size: 15px;
+  padding: 0 16px;
+  border-radius: 1.25rem;
+  transition: all 0.375s;
+  margin: auto;
+}
+.inicio-form button {
+  cursor: pointer;
+  width: 60%;
+  padding: 0 16px;
+  border-radius: 1.25rem;
+  background: #1f1f1f;
+  color: #f9f9f9;
+  border: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 2px;
+  transition: all 0.375s;
+  margin: auto;
+}
+
+.inicio-form input, .inicio-form button {
+  width: 50%;
+  height: 50px;
+}
+
+.inicio-form input :hover {
+  border: 2px solid #000000;
+}
+
+.inicio-form .inicio-form button:hover {
+  background: #000000;
+}
+
+.inicio-form .pr:hover {
+  color: #10449A;
+}
+
+.contact-form input :hover {
+  border: 2px solid #000000;
+}
+
+.contact-form button {
+  cursor: pointer;
+  width: 80px;
+  padding: 0 16px;
+  border-radius: 1.25rem;
+  background: #1f1f1f;
+  color: #f9f9f9;
+  border: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 2px;
+  transition: all 0.375s;
+}
+
+.contact-form button:hover {
+  background: #000000;
+}
+
+/*Formulario footer */
+.futer-form {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 15px;
+  transition: all 0.375s;
+  height: 350px;
+  width: 350px;
+  border: 2px solid;
+}
+.futer-form button {
+  cursor: pointer;
+  width: 100%;
+  padding: 0 16px;
+  border-radius: 1.25rem;
+  background: #1f1f1f;
+  color: #f9f9f9;
+  border: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 2px;
+  transition: all 0.375s;
+}
+
+.futer-form input :hover {
+  border: 2px solid #000000;
+}
+
+.futer-form button:hover {
+  background: #000000;
+}
+
+/* Footer */
+footer {
+  background-color: rgb(99, 99, 99);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "roboto";
+  color: black;
+}
+
+.footer {
+  display: flex;
+  align-items: start;
+  padding: 100px;
+  justify-content: space-evenly;
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,9 @@
+/* Mixins */ 
+
+@mixin tamanio ($alto, $ancho, $border) {
+
+    height: $alto;
+    width: $ancho;
+    border: $border solid;
+
+}
