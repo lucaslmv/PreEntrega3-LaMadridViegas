@@ -63,13 +63,52 @@ body .quienes-somos {
   max-width: 800px;
   text-align: center;
 }
+body .card-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 782px;
+}
+body .card-container .card {
+  background-color: #724632;
+  border: solid 2px;
+  width: 270px;
+  height: 310px;
+  margin: 25px;
+  cursor: pointer;
+}
+body .card-container .card img {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+body .card-container .carta {
+  transition: 2s;
+}
+body .card-container .carta:hover {
+  transform: rotateY(360deg);
+}
+body .card-container .blogcart {
+  transition: all 0.5s;
+}
+body .card-container .blogcart:hover {
+  transform: scale(1.2);
+}
+body .card-container .card-text {
+  height: 120px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
 body .pag2 {
   text-align: center;
   margin-top: 50px;
 }
 body .sesion {
   text-align: center;
-  width: 500px;
+  width: 60%;
   background-color: grey;
   margin-top: 50px;
   margin-bottom: 50px;
@@ -93,7 +132,7 @@ body .sesion h3 {
 body .contac {
   padding: 30px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 body .contac img {
   width: 120px;
@@ -105,27 +144,6 @@ body .redes {
 body .mandar {
   margin-left: 10%;
   padding: 10%;
-}
-
-.card-container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 782px;
-}
-.card-container .card {
-  background-color: #724632;
-  border: solid 2px;
-  width: 270px;
-  margin: 25px;
-}
-.card-container .card img {
-  display: flex;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-  width: 20%;
 }
 
 .img-svg {
@@ -211,13 +229,11 @@ body .mandar {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 15px;
   transition: all 0.375s;
-  height: 350px;
-  width: 350px;
-  border: 2px solid;
+  margin-left: 0;
 }
 .futer-form button {
   cursor: pointer;
-  width: 100%;
+  width: auto;
   padding: 0 16px;
   border-radius: 1.25rem;
   background: #1f1f1f;
@@ -229,10 +245,6 @@ body .mandar {
   text-align: center;
   letter-spacing: 2px;
   transition: all 0.375s;
-}
-
-.futer-form input :hover {
-  border: 2px solid #000000;
 }
 
 .futer-form button:hover {
@@ -249,12 +261,19 @@ footer {
   font-family: "roboto";
   color: black;
 }
-
-.footer {
-  display: flex;
-  align-items: start;
+footer .footer {
   padding: 100px;
-  justify-content: space-evenly;
+}
+footer .futredes {
+  margin-top: 20px;
+}
+
+/* MediaQuerys */
+@media (max-width: 570px) {
+  .footer {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -87,9 +87,10 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 15px;
     transition: all 0.375s;
+    margin-left: 0;
     button {
         cursor: pointer;
-        width: 100%;
+        width: auto;
         padding: 0 16px;
       border-radius: 1.25rem;
       background: #1f1f1f;
@@ -104,13 +105,10 @@
       
       }
 
-      @include tamanio (350px, 350px, 2px)
+    // @include tamanio (250px, 350px, 2px)
 
   }
   
-  .futer-form input :hover{
-    border: 2px solid #000000;
-  }
   .futer-form button:hover{
   background: #000000 ;   
   

@@ -10,10 +10,14 @@ footer {
     justify-content: center;
     font-family: "roboto";
     color: black;
+   
+    .footer{
+      padding: 100px;
+    }
+
+    .futredes {
+      margin-top: 20px;
+    }
+    
   }
-  .footer{
-    display: flex;
-    align-items:start;
-    padding: 100px;
-    justify-content: space-evenly;
-  }
+  
